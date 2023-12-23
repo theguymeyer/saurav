@@ -161,7 +161,7 @@ onUnmounted(() => {
                 <a
                   href="https://www.creative-tim.com/product/vue-material-kit"
                   class="btn btn-sm mb-0 bg-gradient-success px-5 py-3 mt-4"
-                  >Download Now</a
+                  >Download Later (now)</a
                 >
               </div>
             </div>
