@@ -20,7 +20,7 @@ import sauravHeadshot from "@/assets/img/saurav-headshot.jpeg";
         </div>
         <div class="col-lg-6 ms-auto mt-3">
           <div class="position-sticky">
-            <h3>
+            <h3 class="justify-content-center text-center">
               Meet your guide! 
             </h3>
             <h6 class="text-secondary font-weight-normal mt-3">

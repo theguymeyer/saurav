@@ -10,14 +10,16 @@ import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
 const props = defineProps({
   action: {
+    title: String,
     type: Object,
     route: String,
     color: String,
     label: String,
     default: () => ({
+      title: "Adventure with Saurav",
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-success",
-      label: "Contact Us"
+      label: "Message me"
     })
   },
   transparent: {
@@ -120,7 +122,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Annapurna Adventures
+      {{ action.title }}
       </RouterLink>
       <RouterLink
         class="navbar-brand d-block d-md-none"
@@ -134,7 +136,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-      Annapurna Adventures
+      {{ action.title }}
       </RouterLink>
       <a
         href="https://wa.me/972587255811"

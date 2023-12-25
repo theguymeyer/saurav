@@ -4,7 +4,7 @@ import { onMounted, onUnmounted } from "vue";
 //example components
 import NavbarCustom from "../..//examples/navbars/NavbarCustom.vue";
 import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "../../examples/footers/FooterDefault.vue";
+import DefaultFooterSimple from "../../examples/footers/FooterCustomSimple.vue";
 import Header from "../../examples/Header.vue";
 import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
@@ -17,11 +17,17 @@ import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
 import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
+import TripOffering from "./Components/TripOffering.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
 import bannerAnnapurnaNighttime from "@/assets/img/annapurna-nighttime.jpg";
+import imgAnnapurnaCircuitTrek from "@/assets/img/annapurna-circuit-trek.jpg";
+import imgAnnapurnaFlags from "@/assets/img/annapurna-flags.jpg";
+import imgEverestBaseCamp from "@/assets/img/everest-base-camp.jpg";
+import imgKanchenjungaBaseCamp from "@/assets/img/kanchenjunga-base-camp.jpg";
+import imgMakaluBaseCamp from "@/assets/img/makalu-base-camp.jpg";
 import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
 import wavesWhite from "@/assets/img/waves-white.svg";
 import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
@@ -41,6 +47,48 @@ onUnmounted(() => {
   body.classList.remove("presentation-page");
   body.classList.remove("bg-gray-200");
 });
+
+var descriptionArray = ['Item 1', 'Item 2', 'Item 3'];
+
+var trip_offerings = [
+  {
+    title: "Annapurna Region",
+    upperTitle: "Favourite",
+    description: ["Annapurna Circuit", 
+      "Nar-Phu Trek", 
+      "Annapurna Base Camp", 
+      "Mardi Himal base camp trek", 
+      "Ghorepani poonhill trek", 
+      "North Annapurna Base Camp", 
+      "upper mustang trek"],
+    backgroundImage: imgAnnapurnaFlags
+  },
+  {
+    title: "Everest Region",
+    upperTitle: "Adventureous",
+    description: ["Everest Base Camp Trek", 
+      "Pikey peak",  
+      "Everest three passes trek", 
+      "Everest Base trek with gokyo Lake via cholapass"],
+    backgroundImage: imgEverestBaseCamp
+  },
+  {
+    title: "Kanchenjunga",
+    upperTitle: "Remote",
+    description: ["Kanchenjunga Base Camp"],
+    backgroundImage: imgKanchenjungaBaseCamp
+  },
+  {
+    title: "Makalu",
+    upperTitle: "Exciting",
+    description: ["Makalu Base Camp"],
+    backgroundImage: imgMakaluBaseCamp
+  }
+
+
+  
+];
+
 </script>
 
 <template>
@@ -54,7 +102,9 @@ onUnmounted(() => {
   <Header>
     <div
       class="page-header min-vh-75"
-      :style="`background-image: url(${bannerAnnapurnaNighttime})`"
+      :style="{backgroundImage: 
+        `linear-gradient(153deg, rgba(187,155,209,0.3) 0%, rgba(219,183,150,0.015865721288515378) 50%, rgba(210,167,67,0.3) 100%),
+        url(${imgAnnapurnaCircuitTrek})`}"
       loading="lazy"
     >
       <div class="container">
@@ -64,7 +114,7 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ', textShadow: '0 0 15px #000' }"
             >
-              Annapurna Adventures
+              Adventure with Saurav
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500', textShadow: '0 0 10px #000'}">
               Family owned and operated since 1983
@@ -75,22 +125,19 @@ onUnmounted(() => {
     </div>
   </Header>
 
+
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
     <div class="container">
-      <div class="row">
-        <div class="row justify-content-left text-left mt-5 my-sm-5">
-          <div class="col-lg-6" >
-            <div class="position-sticky">
-            <h3 class="justify-content-center text-center">
-              Who are we? 
-            </h3>
-            <h6 class="text-secondary font-weight-normal mt-3">
-              Annapurna Adventures is a full service 
+      <div class="row mt-6">
+        <div class="col-lg-6 mx-auto text-center">
+          <h2 class="mb-0">Who are we?</h2>
+
+          <h6 class="text-secondary font-weight-normal mt-3">
+              Adventures with Saurav is a full service 
               trekking company based in Kathmandu, Nepal. 
               We specialize in small group treks and tours to the Himalayas and around Nepal.
             </h6>
-          </div>
-          </div>
         </div>
       </div>
     </div>
@@ -103,104 +150,24 @@ onUnmounted(() => {
     <!-- <PresentationExample :data="data" /> -->
     <!-- <PresentationPages /> -->
 
-    <BuiltByDevelopers />
+    <hr class="horizontal dark my-1" />
 
-
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="p-4"
-            :color="{ text: 'white', background: 'bg-gradient-success' }"
-            :icon="{ component: 'flag', color: 'white' }"
-            title="Getting Started"
-            description="Check the possible ways of working with our product and the necessary files for building your own project."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/overview/material-kit/',
-              label: { text: 'Let\'s start', color: 'white' }
-            }"
-          />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="px-lg-1 mt-lg-0 mt-4 p-4"
-            height="h-100"
-            :icon="{ component: 'precision_manufacturing', color: 'success' }"
-            title="Plugins"
-            description="Get inspiration and have an overview about the plugins that we
-                used to create the Material Kit."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/input/material-kit/',
-              label: { text: 'Read more' }
-            }"
-          />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="px-lg-1 mt-lg-0 mt-4 p-4"
-            :icon="{ component: 'receipt_long', color: 'success' }"
-            title="Utility Classes"
-            description="Material Kit is giving you a lot of pre-made elements. For those
-                who want flexibility, we included many utility classes."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/utilities/material-kit/',
-              label: { text: 'Read more' }
-            }"
-          />
+    <div class="container">
+      <div class="row mt-6">
+        <div class="col-lg-6 mx-auto text-center">
+          <h2 class="mb-0">Checkout our trips!</h2>
         </div>
       </div>
-    </div> -->
-    
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="p-4"
-            :color="{ text: 'white', background: 'bg-gradient-success' }"
-            :icon="{ component: 'flag', color: 'white' }"
-            title="Getting Started"
-            description="Check the possible ways of working with our product and the necessary files for building your own project."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/overview/material-kit/',
-              label: { text: 'Let\'s start', color: 'white' }
-            }"
-          />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="px-lg-1 mt-lg-0 mt-4 p-4"
-            height="h-100"
-            :icon="{ component: 'precision_manufacturing', color: 'success' }"
-            title="Plugins"
-            description="Get inspiration and have an overview about the plugins that we
-                used to create the Material Kit."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/input/material-kit/',
-              label: { text: 'Read more' }
-            }"
-          />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard
-            class="px-lg-1 mt-lg-0 mt-4 p-4"
-            :icon="{ component: 'receipt_long', color: 'success' }"
-            title="Utility Classes"
-            description="Material Kit is giving you a lot of pre-made elements. For those
-                who want flexibility, we included many utility classes."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/utilities/material-kit/',
-              label: { text: 'Read more' }
-            }"
-          />
-        </div>
-      </div>
-    </div> -->
+    </div>
+
+    <TripOffering 
+      v-for="(trip, index) in trip_offerings"
+      :key="index"
+      :title="trip.title"
+      :upperTitle="trip.upperTitle"
+      :description="trip.description"
+      :backgroundImage="trip.backgroundImage"
+    />
     
     <PresentationTestimonials />
 
@@ -236,5 +203,5 @@ onUnmounted(() => {
     </div>
   </div>
   <!-- TODO udpate footer to just store the date for update tracking -->
-  <DefaultFooter />
+  <DefaultFooterSimple />
 </template>
