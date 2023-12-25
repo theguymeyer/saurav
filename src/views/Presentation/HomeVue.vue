@@ -66,9 +66,7 @@ onUnmounted(() => {
               Annapurna Adventures
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500', textShadow: '0 0 10px #000'}">
-              Family owned and operated since 1983, Annapurna Adventures is a full service 
-              trekking company based in Kathmandu, Nepal. 
-              We specialize in small group treks and tours to the Himalayas and around Nepal.
+              Family owned and operated since 1983
             </p>
           </div>
         </div>
@@ -83,8 +81,9 @@ onUnmounted(() => {
           <div class="col-lg-6">
             <h2 class="text-dark mb-0">Who are we?</h2>
             <p class="lead">
-              We have created multiple options for you to put together and
-              customise into pixel perfect pages.
+              Annapurna Adventures is a full service 
+              trekking company based in Kathmandu, Nepal. 
+              We specialize in small group treks and tours to the Himalayas and around Nepal.
             </p>
           </div>
         </div>
