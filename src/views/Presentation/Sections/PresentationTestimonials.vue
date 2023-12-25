@@ -6,14 +6,14 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
-          <h2 class="mb-0">Trusted by over</h2>
-          <h2 class="text-gradient text-success mb-3">
-            1,679,477+ web developers
-          </h2>
-          <p class="lead">
+          <h2 class="mb-0">Hear from our customers!</h2>
+          <h4 class="text-gradient text-success mb-3">
+            +100 trips completed
+          </h4>
+          <!-- <p class="lead">
             Many Fortune 500 companies, startups, universities and governmental
             institutions love Creative Tim's products.
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="row mt-6">
@@ -26,7 +26,6 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
         />
         <DefaultReviewCard
           class="ms-md-auto"
-          color="bg-gradient-success"
           name="Shailesh Kushwaha"
           date="1 week ago"
           review='"I found solution to all my design needs from Creative Tim. I
@@ -46,7 +45,7 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
         />
       </div>
       <hr class="horizontal dark my-5" />
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-2 col-md-4 col-6 ms-auto">
           <img
             class="w-100 opacity-6"
@@ -82,7 +81,7 @@ import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vu
             alt="Logo"
           />
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
