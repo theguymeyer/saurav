@@ -86,7 +86,7 @@ var trip_offerings = [
   }
 
 
-  
+
 ];
 
 </script>
@@ -153,7 +153,7 @@ var trip_offerings = [
     <hr class="horizontal dark my-1" />
 
     <div class="container">
-      <div class="row mt-6">
+      <div class="row mt-6 my-2">
         <div class="col-lg-6 mx-auto text-center">
           <h2 class="mb-0">Checkout our trips!</h2>
         </div>
