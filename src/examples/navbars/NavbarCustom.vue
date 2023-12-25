@@ -17,7 +17,7 @@ const props = defineProps({
     label: String,
     default: () => ({
       title: "Adventure with Saurav",
-      route: "https://www.creative-tim.com/product/vue-material-kit",
+      route: "https://wa.me/9779841099019",
       color: "bg-gradient-success",
       label: "Message me"
     })
@@ -139,7 +139,7 @@ watch(
       {{ action.title }}
       </RouterLink>
       <a
-        href="https://wa.me/972587255811"
+        :href="action.route"
         class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
         >{{ action.label }}</a
       >
