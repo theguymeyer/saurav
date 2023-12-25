@@ -18,12 +18,12 @@ import sauravHeadshot from "@/assets/img/saurav-headshot.jpeg";
             <figcaption class="figure-caption text-right">Saurav</figcaption>
           </figure>
         </div>
-        <div class="col-lg-6 ms-auto">
+        <div class="col-lg-6 ms-auto mt-3">
           <div class="position-sticky">
             <h3>
               Meet your guide! 
             </h3>
-            <h6 class="text-secondary font-weight-normal">
+            <h6 class="text-secondary font-weight-normal mt-3">
               Hello friends, I am Saurav! I am a seasoned expert of the Himalayas. 
               I have been guiding people through the Himalayas for over 10 years. 
               My brother and I started this company to share our love of the Himalayas with others.
