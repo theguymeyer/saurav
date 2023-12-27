@@ -67,5 +67,6 @@ function getClasses(variant, color, size, fullWidth, disabled) {
     :class="getClasses(variant, color, size, fullWidth, disabled)"
   >
     <slot />
+
   </button>
 </template>

@@ -1,87 +1,63 @@
 <script setup>
-import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vue";
+import CustomReviewCard from "@/examples/cards/reviewCards/CustomReviewCard.vue";
+import MaterialButton from "@/components/MaterialButton.vue";
+import testimonialData from "@/assets/json/testimonials.json";
+
+function getRandomSubArrayEntry(data, numEntries) {
+  let subArray = [];
+  let randomIndexes = [];
+  while (randomIndexes.length < numEntries) {
+    let rand = parseInt(Math.random() * data.length);
+    if (!randomIndexes.includes(rand)) {
+      randomIndexes.push(rand);
+    }
+  }
+
+  for (let i = 0; i < randomIndexes.length; i++) {
+    subArray.push(data[randomIndexes[i]]);
+  }
+  
+  return subArray;
+}
+
+const numOfTestimonials = 3;
+const testimonials = getRandomSubArrayEntry(testimonialData, numOfTestimonials);
+
 </script>
 <template>
   <section class="py-7">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
-          <h2 class="mb-0">Hear from our customers!</h2>
-          <h4 class="text-gradient text-success mb-3">
-            +100 trips completed
-          </h4>
-          <!-- <p class="lead">
-            Many Fortune 500 companies, startups, universities and governmental
-            institutions love Creative Tim's products.
-          </p> -->
+          <h2 class="mb-0">Hear from our reviews!</h2>
         </div>
       </div>
-      <div class="row mt-6">
-        <DefaultReviewCard
-          name="Nick Willever"
-          date="1 day ago"
-          review='"This is an excellent product, the documentation is excellent and
-          helped me get things done more efficiently."'
-          :rating="5.0"
-        />
-        <DefaultReviewCard
-          class="ms-md-auto"
-          name="Shailesh Kushwaha"
-          date="1 week ago"
-          review='"I found solution to all my design needs from Creative Tim. I
-                  use them as a freelancer in my hobby projects for fun! And its
-                  really affordable, very humble guys !!!"'
-          :rating="5.0"
-        />
-
-        <DefaultReviewCard
-          name="Samuel Kamuli"
-          date="3 weeks ago"
-          review='"Great product. Helped me cut the time to set up a site. I
-                  used the components within instead of starting from scratch. I
-                  highly recommend for developers who want to spend more time on
-                  the backend!."'
-          :rating="5.0"
-        />
+      <div class="row mt-3">
+        <div class="col-lg-4 col-md-8" v-for="user in testimonials" :key="user.id">
+          <CustomReviewCard
+            :name=user.name
+            :review=user.review
+            :rating="5.0"
+          />
+        </div>
       </div>
-      <hr class="horizontal dark my-5" />
-      <!-- <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 ms-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-apple.svg"
-            alt="Logo"
-          />
+        <div class="row mt-4">
+          <div class="col-lg-6 mx-auto text-center">
+            <MaterialButton
+              variant="gradient"
+              color="success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a 
+                href="https://maps.app.goo.gl/tujWZMNBX6Hdw5uP9" 
+                target="_blank" 
+                style="color: inherit !important">
+                  More reviews on Google...
+              </a>
+            </MaterialButton>
+          </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-facebook.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-nasa.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-vodafone.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-digitalocean.svg"
-            alt="Logo"
-          />
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
