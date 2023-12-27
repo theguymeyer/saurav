@@ -91,6 +91,23 @@ var trip_offerings = [
 
 </script>
 
+<style scoped>
+
+.titles {
+  text-shadow: 0 0 15px #000;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#mainTitle {
+  display: 'inline-block';
+}
+
+#mainSubTitle {
+  font-size: x-large;
+  font-weight: 500;
+}
+</style>
+
 <template>
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
@@ -103,7 +120,7 @@ var trip_offerings = [
     <div
       class="page-header min-vh-75"
       :style="{backgroundImage: 
-        `linear-gradient(153deg, rgba(187,155,209,0.3) 0%, rgba(219,183,150,0.015865721288515378) 50%, rgba(210,167,67,0.3) 100%),
+        `linear-gradient(153deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.15) 100%),
         url(${imgAnnapurnaCircuitTrek})`}"
       loading="lazy"
     >
@@ -111,14 +128,16 @@ var trip_offerings = [
         <div class="row">
           <div class="col-lg-10 text-center mx-auto position-relative" >
             <h1
-              class="text-white pt-3 mt-n5 me-2"
-              :style="{ display: 'inline-block ', textShadow: '0 0 15px #000' }"
+              id="mainTitle"
+              class="titles text-white pt-3 mt-n5 me-2"
             >
               Adventure with Saurav
             </h1>
-            <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500', textShadow: '0 0 10px #000'}">
-              Family owned and operated since 1983
-            </p>
+            <h5
+              id="mainSubTitle"
+              class="titles lead text-white px-5 mt-2">
+              Travel with the locals
+            </h5>
           </div>
         </div>
       </div>
