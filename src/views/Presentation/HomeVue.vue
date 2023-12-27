@@ -153,7 +153,11 @@ var trip_offerings = [
           <h2 class="mb-0">Who are we?</h2>
 
           <h6 class="text-secondary font-weight-normal mt-3">
-              Adventures with Saurav is a full service 
+            <a 
+              href="https://maps.app.goo.gl/tujWZMNBX6Hdw5uP9" 
+              target="_blank"
+              :style="{ textDecoration: 'underline' }">
+              Adventure with Saurav</a> is a full service 
               trekking company based in Kathmandu, Nepal. 
               We specialize in small group treks and tours to the Himalayas and around Nepal.
             </h6>

@@ -130,7 +130,7 @@ defineProps({
           <div class="text-center">
             <p class="text-dark text-sm font-weight-normal">
               All rights reserved. Copyright ©
-              {{ new Date().getFullYear() }} Adventures with Saurav
+              {{ new Date().getFullYear() }} Adventure with Saurav
             </p>
           </div>
         </div>
