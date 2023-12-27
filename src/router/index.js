@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/Presentation/HomeVue.vue";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
@@ -27,13 +26,13 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    /*
+     * I realized that the routers is very fixed on PresentationView or the name presentation itself
+     * therefore I am leaving the route unchanged but altering the PresentationView file directly
+     * I do not understand why this is designed in such a way
+    */
     {
       path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/presentation",
       name: "presentation",
       component: PresentationView,
     },
@@ -152,6 +151,7 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
+    
   ],
 });
 
