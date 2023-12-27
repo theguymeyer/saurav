@@ -136,7 +136,7 @@ var trip_offerings = [
             <h5
               id="mainSubTitle"
               class="titles lead text-white px-5 mt-2">
-              Travel with the locals
+              Your local guide
             </h5>
           </div>
         </div>
