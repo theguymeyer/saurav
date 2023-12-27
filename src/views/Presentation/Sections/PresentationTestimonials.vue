@@ -1,6 +1,5 @@
 <script setup>
 import CustomReviewCard from "@/examples/cards/reviewCards/CustomReviewCard.vue";
-import MaterialButton from "@/components/MaterialButton.vue";
 import testimonialData from "@/assets/json/testimonials.json";
 
 function getRandomSubArrayEntry(data, numEntries) {
@@ -43,19 +42,12 @@ const testimonials = getRandomSubArrayEntry(testimonialData, numOfTestimonials);
       </div>
         <div class="row mt-4">
           <div class="col-lg-6 mx-auto text-center">
-            <MaterialButton
-              variant="gradient"
-              color="success"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+            <a
+              href="https://maps.app.goo.gl/tujWZMNBX6Hdw5uP9"
+              class="btn me-2 bg-gradient-success"
+              target="_blank"
+              >More reviews on Google...</a
             >
-              <a 
-                href="https://maps.app.goo.gl/tujWZMNBX6Hdw5uP9" 
-                target="_blank" 
-                style="color: inherit !important">
-                  More reviews on Google...
-              </a>
-            </MaterialButton>
           </div>
         </div>
     </div>
