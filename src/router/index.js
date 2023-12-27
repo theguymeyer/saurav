@@ -32,11 +32,11 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
-    {
-      path: "/presentation",
-      name: "presentation",
-      component: PresentationView,
-    },
+    // {
+    //   path: "/presentation",
+    //   name: "presentation",
+    //   component: PresentationView,
+    // },
     {
       path: "/pages/landing-pages/about-us",
       name: "about",
@@ -152,6 +152,7 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
+    
   ],
 });
 
