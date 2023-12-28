@@ -198,12 +198,12 @@ var trip_offerings = [
               color="facebook"
               label="Facebook"
             />
-            <!-- <MaterialSocialButton
-              route=""
-              component="pinterest"
-              color="pinterest"
-              label="Pin it"
-            /> -->
+            <MaterialSocialButton
+              route="https://www.instagram.com/adventurewithsaurav?utm_source=qr&igsh=b2I2dHRydHNxN3Bw"
+              component="instagram"
+              color="reddit"
+              label="Instagram"
+            />
           </div>
         </div>
       </div>
