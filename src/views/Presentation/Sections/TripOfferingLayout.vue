@@ -102,6 +102,7 @@ export default {
             </div>
           </div>
         </div>
+        <hr class="horizontal dark mt-5" />
       </div>
     </div>
   </section>

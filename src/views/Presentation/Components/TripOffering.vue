@@ -7,13 +7,18 @@ const props = defineProps({
   backgroundImage: String
 });
 </script>
+<style scoped>
+#mainContainer {
+  padding: 0;
+}
+</style>
 <template>
-  <div class="container mt-sm-5">
+  <div id="mainContainer" class="container" :style="{ padding: '0' }">
     <div
       class="page-header py-6 py-md-5 my-sm-3 mb-3 border-radius-xl"
       :style="{
         backgroundImage:
-          `linear-gradient(90deg, rgba(48,44,44,1) 0%, rgba(82,66,66,0.7875744047619048) 33%, rgba(0,0,0,0) 100%),
+          `linear-gradient(90deg, rgba(48,44,44,1) 0%, rgba(82,66,66,0.7875744047619048) 53%, rgba(0,0,0,0) 100%),
           url(${props.backgroundImage})`,
       }"
       loading="lazy"
@@ -24,7 +29,7 @@ const props = defineProps({
           <div class="col-lg-12 ms-lg-3">
             <h1 class="text-white">{{ props.title }}</h1>
             <ul>
-              <li class="lead text-white opacity-8" v-for="(item, index) in props.description" :key="index">
+              <li class="lead text-white opacity-10" v-for="(item, index) in props.description" :key="index">
                 {{ item }}
               </li>
             </ul>
