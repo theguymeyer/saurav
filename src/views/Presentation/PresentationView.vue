@@ -16,8 +16,9 @@ import PresentationCounter from "./Sections/PresentationCounter.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
+import TripOfferingLayout from "./Sections/TripOfferingLayout.vue";
+import tripData from "./Sections/Data/tripData";
 import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
-import TripOffering from "./Components/TripOffering.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
@@ -170,28 +171,11 @@ var trip_offerings = [
 
     <!-- <PresentationCounter /> -->
     <PresentationInformation />
-    <!-- <PresentationExample :data="data" /> -->
+    <TripOfferingLayout :data="tripData" />
     <!-- <PresentationPages /> -->
 
     <hr class="horizontal dark my-1" />
 
-    <div class="container">
-      <div class="row mt-6 my-2">
-        <div class="col-lg-6 mx-auto text-center">
-          <h2 class="mb-0">Checkout our trips!</h2>
-        </div>
-      </div>
-    </div>
-
-    <TripOffering 
-      v-for="(trip, index) in trip_offerings"
-      :key="index"
-      :title="trip.title"
-      :upperTitle="trip.upperTitle"
-      :description="trip.description"
-      :backgroundImage="trip.backgroundImage"
-    />
-    
     <PresentationTestimonials />
 
     <div class="py-5">

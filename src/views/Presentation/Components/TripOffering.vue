@@ -13,7 +13,7 @@ const props = defineProps({
       class="page-header py-6 py-md-5 my-sm-3 mb-3 border-radius-xl"
       :style="{
         backgroundImage:
-          `linear-gradient(153deg, rgba(36,148,149,1) 0%, rgba(113,85,25,0.6) 100%),
+          `linear-gradient(90deg, rgba(48,44,44,1) 0%, rgba(82,66,66,0.7875744047619048) 33%, rgba(0,0,0,0) 100%),
           url(${props.backgroundImage})`,
       }"
       loading="lazy"
@@ -21,8 +21,7 @@ const props = defineProps({
       <span class="enable-gradients"></span>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 ms-lg-5">
-            <h4 class="text-white"><i>{{ props.upperTitle }}</i></h4>
+          <div class="col-lg-12 ms-lg-3">
             <h1 class="text-white">{{ props.title }}</h1>
             <ul>
               <li class="lead text-white opacity-8" v-for="(item, index) in props.description" :key="index">
