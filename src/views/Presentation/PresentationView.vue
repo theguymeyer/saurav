@@ -3,40 +3,20 @@ import { onMounted, onUnmounted } from "vue";
 
 //example components
 import NavbarCustom from "../..//examples/navbars/NavbarCustom.vue";
-import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
 import DefaultFooterSimple from "../../examples/footers/FooterCustomSimple.vue";
 import Header from "../../examples/Header.vue";
-import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
 //Vue Material Kit 2 components
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 
 // sections
-import PresentationCounter from "./Sections/PresentationCounter.vue";
-import PresentationPages from "./Sections/PresentationPages.vue";
-import PresentationExample from "./Sections/PresentationExample.vue";
-import data from "./Sections/Data/designBlocksData";
 import TripOfferingLayout from "./Sections/TripOfferingLayout.vue";
 import tripData from "./Sections/Data/tripData";
-import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
-import bannerAnnapurnaNighttime from "@/assets/img/annapurna-nighttime.jpg";
 import imgAnnapurnaCircuitTrek from "@/assets/img/annapurna-circuit-trek.jpg";
-import imgAnnapurnaFlags from "@/assets/img/annapurna-flags.jpg";
-import imgEverestBaseCamp from "@/assets/img/everest-base-camp.jpg";
-import imgKanchenjungaBaseCamp from "@/assets/img/kanchenjunga-base-camp.jpg";
-import imgMakaluBaseCamp from "@/assets/img/makalu-base-camp.jpg";
-import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
-import wavesWhite from "@/assets/img/waves-white.svg";
-import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
-import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
-import logoVue from "@/assets/img/logos/vue.jpg";
-import logoAngular from "@/assets/img/logos/angular.jpg";
-import logoReact from "@/assets/img/logos/react.jpg";
-import logoSketch from "@/assets/img/logos/sketch.jpg";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
@@ -48,47 +28,6 @@ onUnmounted(() => {
   body.classList.remove("presentation-page");
   body.classList.remove("bg-gray-200");
 });
-
-var descriptionArray = ['Item 1', 'Item 2', 'Item 3'];
-
-var trip_offerings = [
-  {
-    title: "Annapurna Region",
-    upperTitle: "Favourite",
-    description: ["Annapurna Circuit", 
-      "Nar-Phu Trek", 
-      "Annapurna Base Camp", 
-      "Mardi Himal base camp trek", 
-      "Ghorepani poonhill trek", 
-      "North Annapurna Base Camp", 
-      "upper mustang trek"],
-    backgroundImage: imgAnnapurnaFlags
-  },
-  {
-    title: "Everest Region",
-    upperTitle: "Adventureous",
-    description: ["Everest Base Camp Trek", 
-      "Pikey peak",  
-      "Everest three passes trek", 
-      "Everest Base trek with gokyo Lake via cholapass"],
-    backgroundImage: imgEverestBaseCamp
-  },
-  {
-    title: "Kanchenjunga",
-    upperTitle: "Remote",
-    description: ["Kanchenjunga Base Camp"],
-    backgroundImage: imgKanchenjungaBaseCamp
-  },
-  {
-    title: "Makalu",
-    upperTitle: "Exciting",
-    description: ["Makalu Base Camp"],
-    backgroundImage: imgMakaluBaseCamp
-  }
-
-
-
-];
 
 </script>
 
