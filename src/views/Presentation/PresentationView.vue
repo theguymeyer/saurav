@@ -151,7 +151,7 @@ var trip_offerings = [
     <div class="container">
       <div class="row mt-6">
         <div class="col-lg-6 mx-auto text-center">
-          <h2 class="mb-0">Who are we?</h2>
+          <h2 class="mb-0">Namaste!</h2>
 
           <h6 class="text-secondary font-weight-normal mt-3">
             <a 
