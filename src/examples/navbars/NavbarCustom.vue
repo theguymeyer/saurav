@@ -111,37 +111,23 @@ watch(
       "
     >
       <RouterLink
-        class="navbar-brand d-none d-md-block"
+        class="navbar-brand d-md-block"
         :class="[
           (props.transparent && textDark.value) || !props.transparent
             ? 'text-dark font-weight-bolder ms-sm-3'
             : 'text-white font-weight-bolder ms-sm-3'
         ]"
         :to="{ name: 'presentation' }"
-        rel="tooltip"
-        title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
       {{ action.title }}
       </RouterLink>
-      <div
-        class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
-        id="navigation"
+      <a
+        :href="action.route"
+        class="btn btn-sm bg-gradient-success mb-0 ms-auto d-block"
+        >Message Me</a
       >
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item">
-            <a
-              :href="action.route"
-              class="btn btn-sm mb-0"
-              :class="action.color"
-              onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ action.label }}</a
-            >
-          </li>
-        </ul>
-      </div>
+      
     </div>
   </nav>
   <!-- End Navbar -->
