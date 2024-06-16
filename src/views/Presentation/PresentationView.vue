@@ -110,12 +110,8 @@ onUnmounted(() => {
 
     <!-- <PresentationCounter /> -->
     <PresentationInformation />
-    <TripOfferingLayout :data="tripData" />
-    <!-- <PresentationPages /> -->
 
-    <hr class="horizontal dark my-1" />
-
-    <PresentationTestimonials />
+    <!-- Socials -->
 
     <div class="py-5">
       <div class="container">
@@ -147,6 +143,17 @@ onUnmounted(() => {
         </div>
       </div>
     </div>
+
+
+    <hr class="horizontal dark my-1" />
+
+    <PresentationTestimonials />
+
+    <hr class="horizontal dark my-1" />
+
+    <TripOfferingLayout :data="tripData" />
+    <!-- <PresentationPages /> -->
+
   </div>
   <!-- TODO udpate footer to just store the date for update tracking -->
   <DefaultFooterSimple />

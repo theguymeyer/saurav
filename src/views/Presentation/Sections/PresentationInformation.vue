@@ -24,11 +24,10 @@ import sauravHeadshot from "@/assets/img/saurav-headshot.jpeg";
               Meet your guide! 
             </h3>
             <h6 class="text-secondary font-weight-normal mt-3">
-              Hello friends, I am Saurav! I am a seasoned expert of the Himalayas. 
-              I have been guiding people through the Himalayas for over 10 years. 
-              My brother and I started this company to share our love of the Himalayas with others.
-              I am a certified guide and have travelled the Himalayas many times. 
-              I am looking forward to meeting you and sharing my knowledge with you!
+Saurav is a seasoned expert of the Himalayas and has been guiding people through them for over 10 years. Along with his brother, they started this company to share their love of the Himalayas with others. Saurav is a certified guide in both <strong>English</strong> and <strong>German</strong> who has traveled the Himalayas many times. 
+            </h6>
+            <h6>
+              Reach out via WhatsApp or social media to learn more!
             </h6>
           </div>
         </div>
