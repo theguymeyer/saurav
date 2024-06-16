@@ -19,7 +19,7 @@ const props = defineProps({
       title: "Adventure with Saurav",
       route: "https://wa.me/9779841099019",
       color: "bg-gradient-success",
-      label: "Message me"
+      label: "WhatsApp"
     })
   },
   transparent: {
@@ -125,7 +125,7 @@ watch(
       <a
         :href="action.route"
         class="btn btn-sm bg-gradient-success mb-0 ms-auto d-block"
-        >Message Me</a
+        >WhatsApp</a
       >
       
     </div>
