@@ -134,7 +134,7 @@ export default [
       },
       {
         image: `${imagesPrefix}/sarangkot-sunrise-view.jpg`,
-        title: "Pohkara Sunrise View",
+        title: "Pokhara Sunrise View",
         subtitle: [
           "Early morning trek to Sarangkot",
           "Panoramic sunrise views over the Himalayas",
