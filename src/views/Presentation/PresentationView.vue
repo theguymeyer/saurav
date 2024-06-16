@@ -13,7 +13,8 @@ import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import TripOfferingLayout from "./Sections/TripOfferingLayout.vue";
 import tripData from "./Sections/Data/tripData";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
-import PresentationInformation from "./Sections/PresentationInformation.vue";
+import SauravPresentationInformation from "./Sections/SauravPresentationInformation.vue";
+import PradipPresentationInformation from "./Sections/PradipPresentationInformation.vue";
 
 //images
 import imgAnnapurnaCircuitTrek from "@/assets/img/annapurna-circuit-trek.jpg";
@@ -109,7 +110,8 @@ onUnmounted(() => {
     <hr class="horizontal dark mt-5 my-1" />
 
     <!-- <PresentationCounter /> -->
-    <PresentationInformation />
+    <PradipPresentationInformation />
+    <SauravPresentationInformation />
 
     <!-- Socials -->
 
