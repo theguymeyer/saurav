@@ -23,7 +23,7 @@ import pradipHeadshot from "@/assets/img/pradip-headshot.jpeg";
               Pradip
             </h3>
             <h6 class="text-secondary font-weight-normal mt-3">
-Pradip has a deep appreciation for the Himalayas' hidden gems and cultural treasures.  Along with his brother, they started this company to share their love of the Himalayas with others. He has embarked on numerous adventures, from exploring remote villages to discovering lesser-known trails. Along with his brother, he started this company to share their love of the Himalayas with others. Pradip is committed to creating memorable experiences for their guests!
+Pradip has a deep appreciation for the Himalayas' hidden gems and cultural treasures. He started this company to share their love of the Himalayas with others. He has embarked on numerous adventures, from exploring remote villages to discovering lesser-known trails. Along with his brother, he started this company to share their love of the Himalayas with others. Pradip is committed to creating memorable experiences for their guests!
             </h6>
             <h6>
               Reach out via WhatsApp or social media to learn more!
