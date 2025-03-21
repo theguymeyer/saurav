@@ -11,6 +11,6 @@ mv deployable/dist/* .
 
 git add --all
 git commit -m "new deploy"
-git push origiin gh-pages
+git push origin gh-pages
 
 git checkout master
