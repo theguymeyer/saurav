@@ -17,7 +17,7 @@ const props = defineProps({
     label: String,
     default: () => ({
       title: "Adventure with Saurav",
-      route: "https://wa.me/9779841099019",
+      route: "https://wa.me/9779843670094",
       color: "bg-gradient-success",
       label: "WhatsApp"
     })
