@@ -13,6 +13,10 @@ echo " "
 echo "Any button to continue.."
 read 
 
+npm install
+npm run build
+rm -rf node_modules package-lock.json 
+
 # move to dist out
 mv dist ..
 
