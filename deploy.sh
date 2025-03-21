@@ -1,14 +1,6 @@
 #!/bin/bash
 
-# First you MUST DO THE FOLLOWING:
-#	npm install
-#	npm run build
-#	rm -rf node_modules package-lock.json
-#
-# This will create the dist directory without any of the npm artifacts. Removing build items is SUPER IMPORTANT (node_modules and lock.json)
-
-echo "Did you build and clean out the repo as noted?"
-echo "MUST read comments at the top of this file!!"
+echo "Installing, building and deploying via gh-pages branch"
 echo " "
 echo "Any button to continue.."
 read 
