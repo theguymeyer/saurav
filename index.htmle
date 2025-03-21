@@ -44,8 +44,8 @@
       gtag('config', 'G-2PHHRR6RTS');
     </script>
 
-    <script type="module" crossorigin src="./assets/index.4fba5d96.js"></script>
-    <link rel="stylesheet" href="./assets/index.3a1c5a32.css">
+    <script type="module" crossorigin src="/assets/index.4fba5d96.js"></script>
+    <link rel="stylesheet" href="/assets/index.3a1c5a32.css">
   </head>
 
   <body>
